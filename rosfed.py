@@ -25,6 +25,7 @@ import multiprocessing
 import time
 import yaml
 import threading
+import locale
 
 from rosinstall_generator import generator
 from defusedxml import ElementTree
@@ -579,4 +580,5 @@ def get_build_order(packages):
 
 
 if __name__ == '__main__':
+    locale.setlocale(locale.LC_TIME, 'en_US.UTF-8')
     main()
