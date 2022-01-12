@@ -1,0 +1,5 @@
+noarch: true
+dependencies:
+  devel:
+    ros:
+      - uuid_msgs
